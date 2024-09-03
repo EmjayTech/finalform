@@ -1,0 +1,155 @@
+body{
+    font-family: Montserrat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(148, 38%, 91%);
+}
+
+.text{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--grey900);
+    font-style: normal;
+}
+
+.heading{
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 650;
+    margin-bottom: 50px;
+}
+
+.error, .error-radio{
+    color: hsl(0, 66%, 54%);
+    position: absolute;
+}
+
+.container{
+    background: #fff;
+    width: var(--width-mobile);
+    position: relative;
+    border-radius: 1.5rem;
+
+}
+
+.myForm{
+    text-align: left;
+    padding: 30px;
+}
+button{
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover{
+    background-color: rgb(15, 53, 15);
+}
+
+.container1{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.textinside, textarea{
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid;
+    height: 2.5rem;
+    text-indent: 1.5rem;
+    margin-top: 0.4rem;
+
+}
+.textinside:hover{
+    cursor: pointer;
+    border: 0.1rem solid
+}
+
+textinside:focus{
+    outline: none;
+}
+
+.label-radio{
+    padding-left: 1rem;
+    text-indent: 0;
+    margin-top: var(--space_16px);
+}
+
+.label.-radio span{
+    display: inline-block;
+    bottom: 0.2rem;
+    position: relative;
+    font-size: 1.2rem;
+}
+input[type=radio]{
+    appearance: none;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 0.12rem solid;
+    margin: 0.8rem 0.8rem 0 0.5rem;
+}
+input[type=radio]:hover{
+cursor: pointer;
+}
+input[type=radio]:checked{
+    border: 0.18rem solid var(--green500);
+    position: relative;
+}
+input[type=radio]:checked::after{
+    position: absolute;
+        top: calc(50% - 0.3rem); left: calc(50% - 0.3rem);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--green500);
+    display: inline-block;
+    content: '';
+}
+.madatory{
+    display: inline-block;
+    margin-left: 0.6rem;
+    color: var(--green500);
+}
+
+input[type=text], input[typr=email], textarea{
+
+}
+.result{
+    display: none;
+    width: 90%;
+    border-radius: 0.9rem;
+    text-align: left;
+    position: absolute;
+        top: -1rem; left: 1rem;
+}
+.success-text{
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.success-text::before{
+    display: inline-block;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.2rem;
+    background: url(./images/icon-success-check.svg) no-repeat;
+    vertical-align: middle;
+}
+
+.text-result{
+    color:#fff;
+}
+
